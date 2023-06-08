@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio project</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/924eca69fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container"> 
+        <nav>
+            <img src="images/logo.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Egudu</span><br>Casmir From Nigeria</h1>
+        </div>
+
+       </div>
+    </div>
+    <!-- -----------------about------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/casss.jpg">
+                </div>
+                <div class="about-col-1">
+                    <h1 class="sub-title">About me</h1>
+                    <p> Hello! I'm Casmir, a passionate and dedicated software developer with a strong foundation in programming and a deep love for creating innovative solutions. 
+                        <br>With 3 years of experience in the field, I have developed a diverse skill set and a keen eye for detail. I am a problem solver at heart, and I thrive on challenging projects that require me to think outside the box. <br>I approach each task with a meticulous mindset, ensuring that my code is clean, efficient, and scalable. Collaboration is a core value for me, and I greatly enjoy working in cross-functional teams, sharing ideas, and learning from others.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul> 
+                                <li><span>Software Engineer</span><br>Web/App developer</li>
+                                <li><span>Web Development</span><br>Web App developement</li>
+                                <li><span>App Development</span><br>Building Android/ios app</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul> 
+                                <li><span>2019</span><br>Web/App developer</li>
+                                <li><span>2020</span><br>Web App developement</li>
+                                <li><span>2021</span><br>Building Android/ios app</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul> 
+                                <li><span>2017</span><br>Bsc Aplied Biochemistry</li>
+                                <li><span>2020</span><br>software and Coding program</li>
+                                <li><span>2022-2023</span><br>ALX-SE program</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--------------services---------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list"> 
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi est aperiam id, ad quasi, accusantium in dolores dolorem, sed ut dolore. Hic nemo unde quia, repellat quo tempore provident?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Software Development</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi est aperiam id, ad quasi, accusantium in dolores dolorem, sed ut dolore. Hic nemo unde quia, repellat quo tempore provident?</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi est aperiam id, ad quasi, accusantium in dolores dolorem, sed ut dolore. Hic nemo unde quia, repellat quo tempore provident?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+    <!------------portfolio-------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Booking App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!------------contact------------------>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> eguducasidi0@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i> +2347068663092</p>
+                    <div class="social-icons">
+                        <a href="www.facebook.com/casidi.j.michael"><i class="fa-brands fa-facebook fa-beat-fade"></i></a>
+                        <a href="www.twitter.com/eguducasidi"><i class="fa-brands fa-twitter fa-flip"></i></a>
+                        <a href="www.instagram.com/casidi_michael"><i class="fa-brands fa-instagram fa-beat"></i></a>
+                        <a href="www.linkedin.com/in/casmir-egudu-754815241"><i class="fa-brands fa-linkedin fa-bounce"></i></a>
+                    </div>
+                    <a href="" class="btn btn2" download>Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ casmir 2023.<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+      
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzkGv94hH0-q3wQ3cUTEofkIEUxR5AKnE6zNEPXJ1hbhWtngtEP1AgtnvXE80d3fCsxxA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const Msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },1,500)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
